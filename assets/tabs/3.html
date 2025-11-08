@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="light" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Notícias do Mar</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1392ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101a22",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+    <div class="relative mx-auto flex h-auto min-h-screen max-w-lg flex-col overflow-x-hidden">
+        <!-- Top App Bar -->
+        <header
+            class="sticky top-0 z-10 flex items-center bg-background-light/80 dark:bg-background-dark/80 p-4 pb-2 justify-between backdrop-blur-sm">
+            <a href="../../index.html"
+                class="flex size-10 shrink-0 items-center justify-center rounded-full text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200/50 transition">
+                <span class="material-symbols-outlined text-2xl">arrow_back</span>
+            </a>
+            <h1
+                class="text-gray-800 dark:text-gray-100 text-lg font-bold leading-tight tracking-tight flex-1 text-center">
+                Notícias do Mar 🌎</h1>
+            <div class="flex w-12 items-center justify-end">
+                <button
+                    class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-transparent text-gray-800 dark:text-gray-100 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+                    <span class="material-symbols-outlined">search</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-grow flex-col px-4 pt-4 pb-24">
+
+            <!-- News Card 1 -->
+            <div class="mb-4 @container">
+                <div
+                    class="flex flex-col rounded-xl overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)] bg-white dark:bg-slate-800">
+                    <div class="w-full bg-center bg-no-repeat aspect-[16/9] bg-cover"
+                        style="background-image: url('https://thumbs.dreamstime.com/b/golfinho-e-tartaruga-subaqu%C3%A1ticos-no-recife-65926402.jpg');"
+                        data-alt="Tartaruga marinha presa em plástico."></div>
+                    <div class="flex flex-col gap-1 p-4">
+                        <p class="text-primary dark:text-primary/80 text-sm font-medium">Poluição Marinha</p>
+                        <p class="text-gray-800 dark:text-gray-100 text-lg font-bold leading-tight">
+                            Tartarugas e Golfinhos Morrem Presos em Plástico</p>
+                        <p class="text-gray-500 dark:text-gray-400 text-base leading-normal mt-1">
+                            Ambientalistas alertam que o aumento de resíduos plásticos nos mares tem causado a morte de
+                            milhares de animais.
+                            Sacolas, redes de pesca e garrafas plásticas são os maiores vilões para tartarugas,
+                            golfinhos e aves marinhas.
+                        </p>
+                        <p class="text-gray-400 dark:text-gray-500 text-sm mt-2">Publicado em 30 de maio de 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Card 2 -->
+            <div class="mb-4 @container">
+                <div
+                    class="flex flex-col rounded-xl overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)] bg-white dark:bg-slate-800">
+                    <div class="w-full bg-center bg-no-repeat aspect-[16/9] bg-cover"
+                        style="background-image: url('https://etica-ambiental.com.br/wp-content/uploads/2019/10/2019-11-dd-quais-sao-as-formas-de-recuperar-o-vazamento-de-oleo.jpg');"
+                        data-alt="Peixes mortos flutuando em água poluída."></div>
+                    <div class="flex flex-col gap-1 p-4">
+                        <p class="text-primary dark:text-primary/80 text-sm font-medium">Impacto Ambiental</p>
+                        <p class="text-gray-800 dark:text-gray-100 text-lg font-bold leading-tight">
+                            Vazamento de Óleo Causa Mortandade em Litoral Nordestino</p>
+                        <p class="text-gray-500 dark:text-gray-400 text-base leading-normal mt-1">
+                            Um novo vazamento de óleo atingiu praias do Nordeste, deixando um rastro de peixes e
+                            tartarugas mortos.
+                            Autoridades investigam a origem da contaminação, enquanto voluntários tentam conter os danos
+                            ambientais.
+                        </p>
+                        <p class="text-gray-400 dark:text-gray-500 text-sm mt-2">Publicado em 28 de maio de 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Card 3 -->
+            <div class="mb-4 @container">
+                <div
+                    class="flex flex-col rounded-xl overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)] bg-white dark:bg-slate-800">
+                    <div class="w-full bg-center bg-no-repeat aspect-[16/9] bg-cover"
+                        style="background-image: url('https://novomomento.com.br/wp-content/uploads/2020/07/c69dcdde-poluicao-plastico-oceano.jpg);"
+                        data-alt="Praia coberta por lixo plástico."></div>
+                    <div class="flex flex-col gap-1 p-4">
+                        <p class="text-primary dark:text-primary/80 text-sm font-medium">Crise Global</p>
+                        <p class="text-gray-800 dark:text-gray-100 text-lg font-bold leading-tight">
+                            Poluição por Plástico Ameaça Toda a Vida Marinha</p>
+                        <p class="text-gray-500 dark:text-gray-400 text-base leading-normal mt-1">
+                            Estima-se que mais de 100 mil animais marinhos morram por ano devido ao lixo plástico.
+                            Especialistas reforçam a importância da redução do consumo e reciclagem para preservar os
+                            oceanos.
+                        </p>
+                        <p class="text-gray-400 dark:text-gray-500 text-sm mt-2">Publicado em 25 de maio de 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Card 4 -->
+            <div class="mb-4 @container">
+                <div
+                    class="flex flex-col rounded-xl overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.05)] bg-white dark:bg-slate-800">
+                    <div class="w-full bg-center bg-no-repeat aspect-[16/9] bg-cover"
+                        style="background-image: url('https://images.unsplash.com/photo-1696177260015-5363250fa522?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8');"
+                        data-alt="Ave marinha coberta de óleo.">
+                    </div>
+                    <div class="flex flex-col gap-1 p-4">
+                        <p class="text-primary dark:text-primary/80 text-sm font-medium">Contaminação</p>
+                        <p class="text-gray-800 dark:text-gray-100 text-lg font-bold leading-tight">
+                            Aves Marinhas Sofrem com Derramamentos de Petróleo</p>
+                        <p class="text-gray-500 dark:text-gray-400 text-base leading-normal mt-1">
+                            Derramamentos de óleo continuam afetando ecossistemas costeiros. Aves têm as penas cobertas
+                            de petróleo,
+                            perdendo sua capacidade de voar e regular a temperatura corporal, levando-as à morte.
+                        </p>
+                        <p class="text-gray-400 dark:text-gray-500 text-sm mt-2">Publicado em 23 de maio de 2024</p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+</body>
+
+</html>

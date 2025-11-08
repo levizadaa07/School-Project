@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Participantes</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style type="text/tailwindcss">
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1392ec",
+                        "background-light": "#f0f8ff",
+                        "background-dark": "#101a22",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark">
+    <div class="relative flex h-auto min-h-screen w-full flex-col font-display group/design-root overflow-x-hidden">
+        <!-- Top App Bar -->
+        <div
+            class="flex items-center p-4 pb-2 justify-between sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10">
+            <a href="../../index.html"
+                class="flex size-10 shrink-0 items-center justify-center rounded-full text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200/50 transition">
+                <span class="material-symbols-outlined text-2xl">arrow_back</span>
+            </a>
+        </div>
+        <!-- Headline -->
+        <header class="px-4 pt-4 pb-6">
+            <h1 class="text-slate-900 dark:text-white tracking-tight text-[32px] font-bold leading-tight text-left">Criadores 😎</h1>
+        </header>
+        <!-- Main Content with List Items -->
+        <main class="flex flex-col gap-3 px-4 pb-8">
+            <!-- List Item 1: Avoid Single-Use Plastics -->
+            <div
+                class="flex w-full items-center gap-4 rounded-xl bg-white dark:bg-slate-800/50 p-4 min-h-[72px] justify-between shadow-sm shadow-primary/10">
+                <div class="flex items-center gap-4">
+                    <div
+                        class="text-slate-700 dark:text-slate-300 flex items-center justify-center rounded-lg bg-primary/10 dark:bg-primary/20 shrink-0 size-12">
+                        <span class="material-symbols-outlined text-primary dark:text-sky-300">person</span>
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <p class="text-slate-800 dark:text-slate-100 text-base font-medium leading-normal line-clamp-1">
+                            Orientação</p>
+                        <p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal line-clamp-2">
+                            Norma Da Silva Brito</p>
+                    </div>
+                </div>
+            </div>
+            <!-- List Item 2: Recycle Correctly -->
+            <div
+                class="flex w-full items-center gap-4 rounded-xl bg-white dark:bg-slate-800/50 p-4 min-h-[72px] justify-between shadow-sm shadow-primary/10">
+                <div class="flex items-center gap-4">
+                    <div
+                        class="text-slate-700 dark:text-slate-300 flex items-center justify-center rounded-lg bg-primary/10 dark:bg-primary/20 shrink-0 size-12">
+                        <span class="material-symbols-outlined text-primary dark:text-sky-300">person</span>
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <p class="text-slate-800 dark:text-slate-100 text-base font-medium leading-normal line-clamp-1">
+                            Pesquisa & Edição</p>
+                        <p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal line-clamp-2">
+                            Maria Rita Lima Farias</p>
+                    </div>
+                </div>
+            </div>
+            <!-- List Item 3: Beach Care -->
+            <div
+                class="flex w-full items-center gap-4 rounded-xl bg-white dark:bg-slate-800/50 p-4 min-h-[72px] justify-between shadow-sm shadow-primary/10">
+                <div class="flex items-center gap-4">
+                    <div
+                        class="text-slate-700 dark:text-slate-300 flex items-center justify-center rounded-lg bg-primary/10 dark:bg-primary/20 shrink-0 size-12">
+                        <span class="material-symbols-outlined text-primary dark:text-sky-300">person</span>
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <p class="text-slate-800 dark:text-slate-100 text-base font-medium leading-normal line-clamp-1">
+                            Programador Do Website</p>
+                        <p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal line-clamp-2">
+                            Levi De Sousa Prado</p>
+                    </div>
+                </div>
+            </div>
+            <!-- List Item 4: Conscious Consumption -->
+            <div
+                class="flex w-full items-center gap-4 rounded-xl bg-white dark:bg-slate-800/50 p-4 min-h-[72px] justify-between shadow-sm shadow-primary/10">
+                <div class="flex items-center gap-4">
+                    <div
+                        class="text-slate-700 dark:text-slate-300 flex items-center justify-center rounded-lg bg-primary/10 dark:bg-primary/20 shrink-0 size-12">
+                        <span class="material-symbols-outlined text-primary dark:text-sky-300">person</span>
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <p class="text-slate-800 dark:text-slate-100 text-base font-medium leading-normal line-clamp-1">
+                            Fotógrafo</p>
+                        <p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal line-clamp-2">
+                            Enderson De Sousa Silva</p>
+                    </div>
+                </div>
+            </div>
+            <!-- List Item 5: Save Water -->
+            <div
+                class="flex w-full items-center gap-4 rounded-xl bg-white dark:bg-slate-800/50 p-4 min-h-[72px] justify-between shadow-sm shadow-primary/10">
+                <div class="flex items-center gap-4">
+                    <div
+                        class="text-slate-700 dark:text-slate-300 flex items-center justify-center rounded-lg bg-primary/10 dark:bg-primary/20 shrink-0 size-12">
+                        <span class="material-symbols-outlined text-primary dark:text-sky-300">person</span>
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <p class="text-slate-800 dark:text-slate-100 text-base font-medium leading-normal line-clamp-1">
+                            Figurante</p>
+                        <p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal line-clamp-2">
+                            Samuel Silva De Sousa</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

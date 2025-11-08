@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Curiosidades Marinhas</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1392ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101a22",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <!-- Top App Bar -->
+        <div
+            class="sticky top-0 z-10 flex items-center bg-background-light/80 dark:bg-background-dark/80 p-4 pb-3 backdrop-blur-sm justify-between">
+            <a href="../../index.html"
+                class="flex size-10 shrink-0 items-center justify-center rounded-full text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200/50 transition">
+                <span class="material-symbols-outlined text-2xl">arrow_back</span>
+            </a>
+            <h1
+                class="text-zinc-900 dark:text-zinc-100 text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-10">
+                Curiosidades Marinhas 🧠</h1>
+        </div>
+        <!-- Content Area -->
+        <main class="flex flex-1 flex-col gap-4 p-4">
+            <!-- List Item Card 1 -->
+            <div
+                class="flex items-center gap-4 bg-white dark:bg-zinc-900/50 p-4 rounded-xl shadow-sm shadow-zinc-200/50 dark:shadow-none">
+                <div class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                    <span class="material-symbols-outlined text-2xl">neurology</span>
+                </div>
+                <div class="flex flex-col justify-center">
+                    <p class="text-zinc-900 dark:text-zinc-100 text-base font-medium leading-normal line-clamp-2">O
+                        polvo tem três corações e sangue azul.</p>
+                    <p class="text-zinc-500 dark:text-zinc-400 text-sm font-normal leading-normal">Biologia marinha</p>
+                </div>
+            </div>
+            <!-- List Item Card 2 -->
+            <div
+                class="flex items-center gap-4 bg-white dark:bg-zinc-900/50 p-4 rounded-xl shadow-sm shadow-zinc-200/50 dark:shadow-none">
+                <div class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                    <span class="material-symbols-outlined text-2xl">public</span>
+                </div>
+                <div class="flex flex-col justify-center">
+                    <p class="text-zinc-900 dark:text-zinc-100 text-base font-medium leading-normal line-clamp-2">Mais
+                        de 80% do oceano ainda não foi explorado.</p>
+                    <p class="text-zinc-500 dark:text-zinc-400 text-sm font-normal leading-normal">Exploração oceânica
+                    </p>
+                </div>
+            </div>
+            <!-- List Item Card 3 -->
+            <div
+                class="flex items-center gap-4 bg-white dark:bg-zinc-900/50 p-4 rounded-xl shadow-sm shadow-zinc-200/50 dark:shadow-none">
+                <div class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                    <span class="material-symbols-outlined text-2xl">scuba_diving</span>
+                </div>
+                <div class="flex flex-col justify-center">
+                    <p class="text-zinc-900 dark:text-zinc-100 text-base font-medium leading-normal line-clamp-2">As
+                        tartarugas marinhas voltam à praia onde nasceram para botar seus ovos.</p>
+                    <p class="text-zinc-500 dark:text-zinc-400 text-sm font-normal leading-normal">Ciclo de vida</p>
+                </div>
+            </div>
+            <!-- List Item Card 4 -->
+            <div
+                class="flex items-center gap-4 bg-white dark:bg-zinc-900/50 p-4 rounded-xl shadow-sm shadow-zinc-200/50 dark:shadow-none">
+                <div class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                    <span class="material-symbols-outlined text-2xl">water_lux</span>
+                </div>
+                <div class="flex flex-col justify-center">
+                    <p class="text-zinc-900 dark:text-zinc-100 text-base font-medium leading-normal line-clamp-2">Corais
+                        são animais, não plantas, e abrigam 25% da vida marinha.</p>
+                    <p class="text-zinc-500 dark:text-zinc-400 text-sm font-normal leading-normal">Ecossistemas</p>
+                </div>
+            </div>
+            <!-- List Item Card 5 -->
+            <div
+                class="flex items-center gap-4 bg-white dark:bg-zinc-900/50 p-4 rounded-xl shadow-sm shadow-zinc-200/50 dark:shadow-none">
+                <div class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                    <span class="material-symbols-outlined text-2xl">downhill_skiing</span>
+                </div>
+                <div class="flex flex-col justify-center">
+                    <p class="text-zinc-900 dark:text-zinc-100 text-base font-medium leading-normal line-clamp-2">O
+                        maior animal da Terra, a baleia-azul, vive no oceano.</p>
+                    <p class="text-zinc-500 dark:text-zinc-400 text-sm font-normal leading-normal">Mamíferos marinhos
+                    </p>
+                </div>
+            </div>
+            <!-- List Item Card 6 -->
+            <div
+                class="flex items-center gap-4 bg-white dark:bg-zinc-900/50 p-4 rounded-xl shadow-sm shadow-zinc-200/50 dark:shadow-none">
+                <div class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                    <span class="material-symbols-outlined text-2xl">tsunami</span>
+                </div>
+                <div class="flex flex-col justify-center">
+                    <p class="text-zinc-900 dark:text-zinc-100 text-base font-medium leading-normal line-clamp-2">As
+                        correntes oceânicas funcionam como um sistema de aquecimento global.</p>
+                    <p class="text-zinc-500 dark:text-zinc-400 text-sm font-normal leading-normal">Geografia marinha</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
